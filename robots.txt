@@ -5,4 +5,4 @@ User-agent: *
 Disallow: /politicas.html
 Disallow: /sobre.html
 Disallow: /icones.html
-Disalow: /termos.html
+Disallow: /termos.html
