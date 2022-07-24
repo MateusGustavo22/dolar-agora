@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta name="description" content="Veja a cotação do dólar de Hong Kong hoje. Realize a conversão para o real brasileiro.">
+	  <meta name="keywords" content="Dólar de Hong Kong, cotação, converter dólar Hong Kong para real, dólar de hong kong hoje, conversor, real brasileiro, preço do dólar hong kong, gráfico, histórico">
+	  <title>Cotação do dólar de hong kong hoje</title>
+	  <link rel="icon" type="image/x-icon" href="imagens/favicon.png">
+    <link href="hkd.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="menu-area">
+        <div class="botao-menu" onclick="chamarMenu()">
+          <div class="linha"></div>
+          <div class="linha"></div>
+          <div class="linha"></div>
+        </div>
+        <a href="/" class="icone">
+          <img src="imagens/site-icone.png" alt="Ícone do site">
+        </a>
+      </div>
+      <div class="sobre-area">
+        <a href="/sobre.html">Sobre</a>
+      </div>
+    </header>
+    <nav id="moedas">
+      <ul>
+        <li><a href="/">Dólar americano</a></li>
+        <li><a href="/dolar-canadense/cad.html">Dólar canadense</a></li>
+        <li><a href="/dolar-australiano/aud.html">Dólar australiano</a></li>
+        <li><a href="/dolar-taiwanes/twd.html">Dólar Taiwanês</a></li>
+        <li><a href="/dolar-hongkong/hkd.html">Dólar Hong-Kong</a></li>
+        <li><a href="/euro/eur.html">Euro</a></li>
+        <li><a href="/libra/gbp.html">Libra</a></li>
+        <li><a href="/peso-argentino/ars.html">Peso argentino</a></li>
+        <li><a href="/peso-mexicano/mxn.html">Peso mexicano</a></li>
+        <li><a href="/franco-suico/chf.html">Franco Suíço</a></li>
+        <li><a href="/yuan-chines/cny.html">Yuan chinês</a></li>
+        <li><a href="/iene-japones/jpy.html">Iene japonês</a></li>
+        <li><a href="/rublo-russo/rub.html">Rublo russo</a></li>
+      <ul>
+    </nav>
+    <div class="ads1">
+     
+    </div>
+    <div class="ads1-mobile">
+      
+    </div>
+    <main>
+      <div class="h1-principal">
+        <h1>Cotação do dólar de Hong Kong hoje</h1>
+      </div>
+      <div class="input-area">
+        <div class="moedas-input">
+          <div id="input-1">
+            <div class="moeda-icon">
+              <img src="imagens/hong-kong.png" alt="Bandeira da moeda">
+            </div>
+            <div class="input-div">
+              <div id="moeda-code1">
+                <span>$</span>
+              </div>
+              <input id="entrada-1" type="number" value="1">
+            </div>
+          </div>
+          <div id="input-2">
+            <div class="moeda-icon">
+              <img src="imagens/brasil.png" alt="Bandeira do Brasil">
+            </div>
+            <div class="input-div">
+              <div id="moeda-code2">
+                <span>R$</span>
+              </div>
+              <input id="entrada-2" type="number" value="0">
+            </div>
+          </div>
+            
+        <div class="data">
+          <span id="data"></span>
+        </div>
+        <section class="grafico">
+          <h3>Gráfico dos últimos 30 dias do dólar de Hong Kong<h3>
+          <canvas id="myChart" height=""></canvas>
+        </section>
+         <div class="ads2">
+          
+        </div>
+        <div class="ads2-native">
+         
+        </div>
+      </div>
+    </main>
+    <article>
+      <h2>A cotação do dólar de Hong Kong hoje é de <strong id="atual"></strong> reias.</h2>
+      <p>O Dólar Agora, é uma ferramenta online para você ficar sempre atualizado da cotação atual do dólar de Hong Kong. Nesse site, você também pode ver o gráfico do preço do dólar de Hong Kong nos últimos 30 dias.</p>
+      <h3>Sobre o dólar de Hong Kong</h3>
+      <p>O dólar de Hong Kong (código: HKD, símbolo: HK$) é a moeda oficial de Hong Kong, e também utilizada na China continental e Macau. O dólar de Hong Kong utiliza moedas de 10, 20, 50 cents, 1, 2, 5 e 10 dólares e notas de 10, 20, 50, 100, 500 e 1000 dólares.</p>
+      <h3>Converter dólar de Hong Kong para real<h3>
+      <p>Aqui no Dólar Agora, você pode ficar sempre informado da cotação atual do dólar de Hong Kong. A cotação do dólar de Hong Kong nesse site é sempre atualizado várias vezes ao dia. Além de ver sua cotação, você também pode realizar a conversão para o real brasileiro e vice-versa. Para isso, você só precisa digitar o valor  no campo da moeda que deseja converter e  pronto, será convertido automáticamente.</p>
+    </article>
+    <footer>
+      <a href="mailto:contatodolaragora@gmail.com?subject=DólarAgora" rel="noopener">Contato</a>
+      <a href="/politicas.html">Política de privacidade<a>
+      <a href="/termos.html">Termos de uso</a>
+      <a href="/icones.html">Ícones<a>
+    </footer>
+      <script defer src="hkd.js"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script defer src="grafico_hkd.js"></script>
+      <!--Ajustar altura do gráfico-->
+      <script>
+        let widthWindow = window.screen.width
+        if (widthWindow <= 400) {
+          document.getElementById("myChart").setAttribute("height", "170px")
+        }
+      </script>
+      <!--Mostrar e ocultar menu-->
+      <script>
+    		const botaoMenu = document.getElementById("moedas")
+    		function chamarMenu() {
+    			if (botaoMenu.style.display != "block") {
+    				botaoMenu.style.display = "block";
+    			}
+    			else {
+    				botaoMenu.style.display = "none";
+    			}
+    		}
+	    </script>
+	    <!--Efeito dos inputs-->
+ 	    <script>
+	      const input1 = document.getElementById("entrada-1");
+	      const inputArea = document.getElementById("input-1");
+    		const moedaFundo = document.getElementById("moeda-code1");
+    		
+    		input1.addEventListener('focus', function() {
+    			input1.style.backgroundColor = "#dadadc"
+    			inputArea.style.backgroundColor = "#dadadc"
+    			moedaFundo.style.backgroundColor = "#dadadc"
+    		});
+    		
+    		input1.addEventListener('blur', function() {
+    			input1.style.backgroundColor = "#f3f3f5"
+    			inputArea.style.backgroundColor = "#f3f3f5"
+    			moedaFundo.style.backgroundColor = "#f3f3f5"
+    		});
+    		
+    		const input2 = document.getElementById("entrada-2")
+    		const inputArea2 = document.getElementById("input-2")
+    		const moedaFundo2 = document.getElementById("moeda-code2")
+    		
+       input2.addEventListener('focus', function() {
+    			input2.style.backgroundColor = "#dadadc"
+    			inputArea2.style.backgroundColor = "#dadadc"
+    			moedaFundo2.style.backgroundColor = "#dadadc"
+    		});
+    		
+    		input2.addEventListener('blur', function() {
+    			input2.style.backgroundColor = "#f3f3f5"
+    			inputArea2.style.backgroundColor = "#f3f3f5"
+    			moedaFundo2.style.backgroundColor = "#f3f3f5"
+    		});
+	    </script>
+  </body>
+</html>

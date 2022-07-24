@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: white;
+  max-width: 1366px;
+  height: 55px;
+  margin: auto;
+  display: flex;
+  flex-direction: inline;
+  box-shadow: 0px 0px 5px 0.5px rgba(0,0,0,0.75);
+}
+
+.menu-area, .sobre-area {
+  width: 50%;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sobre-area {
+  justify-content: right;
+  align-items: center;
+}
+
+.sobre-area a {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  color: #3c3c3c;
+}
+
+.sobre-area a:hover {
+ text-decoration: underline;
+}
+
+.botao-menu {
+  width: 25px;
+  cursor: pointer;
+}
+
+.linha {
+  width: 100%;
+  height: 3px;
+  background-color: #3c3c3c;
+  margin-bottom: 5px;
+  border-radius: 2px;
+}
+
+.icone {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-self: center;
+  margin-left: 10px;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+.icone img {
+  width: 100%;
+}
+
+#moedas {
+  background-color: blue;
+  width: 170px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  margin-top: 8px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  display: none;
+  z-index: 2;
+  box-shadow: 0px 0px 10px 0.8px rgba(0,0,0,0.75);
+}
+
+#moedas li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+#moedas a {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  text-decoration: none;
+  color: #333333;
+}
+
+#moedas a:hover {
+  text-decoration: underline;
+}
+
+.ads1 {
+  margin: auto;
+  margin-top: 20px;
+  display: none;
+}
+
+.ads1-mobile {
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: -15px;
+}
+
+.ads2 {
+  margin: auto;
+  margin-top: 30px;
+}
+.ads2-native {
+  margin: auto;
+  margin-top: 30px;
+  display: none;
+  justify-content: center;
+}
+
+.h1-principal {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  flex-direction: column;
+} 
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  color: #333333;
+}
+
+@media only screen and (min-width: 735px) {
+  .ads1 {
+    display: block;
+  }
+  .ads1-mobile {
+    display: none;
+  }
+  
+  .ads2 {
+    display: none;
+  }
+  
+  .ads2-native {
+    display: flex;
+  }
+}
+
+.input-area {
+  max-width: 700px;
+  height: 100vh;
+  margin: auto;
+  padding: 10px;
+}
+
+.moedas-input {
+  max-width: 700px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.data {
+  margin: auto;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.data span {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  color: #808080;
+}
+
+.grafico {
+  max-width: 700px;
+  box-shadow: 0px 0px 10px 0.8px rgba(0,0,0,0.75);
+  padding: 5px;
+  padding-top: 12px;
+  border-radius: 3px;
+}
+
+section h3 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  color: #808080;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#input-1, #input-2 {
+  max-width: 100%;
+  height: 60px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: inline;
+  padding-left: 5px;
+  align-items: center;
+  background-color: #F3f3f5;
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.moeda-icon {
+  width: 70px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.moeda-icon img {
+  width: 100%;
+}
+
+#moeda-code1, #moeda-code2 {
+  height: 50px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F3f3f5;
+}
+
+.input-div {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+input {
+  width: 100%;
+  height: 60px;
+  text-align: right;
+  padding-right: 8px;
+  font-size: 40px;
+  color: #5c5c61;
+  background-color: #F3f3f5;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  border: none;
+}
+
+#moeda-code1, #moeda-code2 span {
+  font-size: 40px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  color: #5c5c61;
+}
+
+.cotacao {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+}
+
+.cotacao h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: 'Inter', sans-serif;
+  color: #333333;
+}
+
+article {
+  max-width: 700px;
+  padding: 20px;
+  margin: auto;
+}
+
+article h2, h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #333333;
+}
+
+article p {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+footer {
+  max-width: 1366px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F3f3f5;
+  position: relative;
+  bottom: 0;
+  padding: 10px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+footer a {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  margin: 4px;
+  color: #333333;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-height: 400px) {
+  .input-area {
+    height: 100%;
+  }
+}
