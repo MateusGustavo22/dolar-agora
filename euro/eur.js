@@ -27,7 +27,7 @@ function atualizarInput(cotacao) {
 function atualizarData(resposta) {
   const returnString = resposta
   const returnObg = JSON.parse(returnString)
-  const dataTime = returnObg.JPYBRL.timestamp
+  const dataTime = returnObg.EURBRL.timestamp
   const dataParaInt = parseInt(dataTime)
   const dataFormatada = new Date(dataParaInt * 1000)
   const dia = ("00"+dataFormatada.getDate()).slice(-2)
