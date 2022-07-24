@@ -1,5 +1,5 @@
 function grafico() {
-  const url30dias = "https://economia.awesomeapi.com.br/json/daily/CAD-BRL/30";
+  const url30dias = "https://economia.awesomeapi.com.br/json/daily/AUD-BRL/30";
   const xhttp = new XMLHttpRequest();
 
   xhttp.onreadystatechange = function() {
