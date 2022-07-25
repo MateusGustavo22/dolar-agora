@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.conteiner-principal {
+  max-width: 1366px;
+  margin: auto;
+}
+
 header {
   background: white;
   max-width: 1366px;
