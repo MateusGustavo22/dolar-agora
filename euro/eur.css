@@ -107,7 +107,6 @@ header {
   margin: auto;
   margin-top: 20px;
   display: none;
-  background-color: blue;
 }
 
 .ads1-mobile {
@@ -115,20 +114,17 @@ header {
   display: block;
   margin-top: 20px;
   margin-bottom: -15px;
-  background-color: blue;
 }
 
 .ads2 {
   margin: auto;
   margin-top: 30px;
-  background-color: blue;
 }
 .ads2-native {
   margin: auto;
   margin-top: 30px;
   display: none;
   justify-content: center;
-  background-color: blue;
 }
 
 .h1-principal {
@@ -349,7 +345,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 723px) {
   .input-area {
     height: 100%;
   }
