@@ -104,21 +104,21 @@ header {
 }
 
 .ads1 {
-  margin: auto;
   margin-top: 20px;
   display: none;
+  margin: auto;
 }
 
 .ads1-mobile {
-  margin: auto;
   display: block;
   margin-top: 20px;
   margin-bottom: -15px;
+  margin: auto;
 }
 
 .ads2 {
-  margin: auto;
   margin-top: 30px;
+  margin: auto;
 }
 .ads2-native {
   margin: auto;
