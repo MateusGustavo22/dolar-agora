@@ -107,24 +107,28 @@ header {
   margin: auto;
   margin-top: 20px;
   display: none;
+  justify-content: center;
 }
 
 .ads1-mobile {
   margin: auto;
-  display: block;
   margin-top: 20px;
   margin-bottom: -15px;
+  display: flex;
+  Justify-content: center;
 }
 
 .ads2 {
+  width: 300px;
+  height: 250px;
   margin: auto;
   margin-top: 30px;
 }
+
 .ads2-native {
   margin: auto;
   margin-top: 30px;
   display: none;
-  justify-content: center;
 }
 
 .h1-principal {
@@ -146,7 +150,7 @@ h1 {
 
 @media only screen and (min-width: 735px) {
   .ads1 {
-    display: block;
+    display: flex;
   }
   .ads1-mobile {
     display: none;
